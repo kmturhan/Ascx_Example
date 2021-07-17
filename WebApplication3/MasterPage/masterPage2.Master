@@ -1,5 +1,12 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage2.master.cs" Inherits="WebApplication3.MasterPage.masterPage2" %>
 
+<%@ Register Src="~/Ascx/test2.ascx" TagPrefix="uc1" TagName="test2" %>
+<%@ Register Src="~/Ascx/test1.ascx" TagPrefix="uc1" TagName="test1" %>
+<%@ Register Src="~/Ascx/Pages.ascx" TagPrefix="uc1" TagName="Pages" %>
+
+
+
+
 <!DOCTYPE html>
 
 <html>
@@ -18,6 +25,12 @@
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+            <uc1:test2 runat="server" ID="test2" />
+            <hr />
+            <uc1:test1 runat="server" ID="test1" />
+
+            <hr />
+            <uc1:Pages runat="server" ID="Pages" />
         </div>
     </form>
 </body>

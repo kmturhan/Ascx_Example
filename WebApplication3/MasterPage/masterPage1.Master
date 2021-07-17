@@ -1,6 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage1.master.cs" Inherits="WebApplication3.MasterPage.masterPage1" %>
 
 <%@ Register Src="~/Ascx/test1.ascx" TagPrefix="uc1" TagName="test1" %>
+<%@ Register Src="~/Ascx/Pages.ascx" TagPrefix="uc1" TagName="Pages" %>
+
 
 
 <!DOCTYPE html>
@@ -22,6 +24,7 @@
             <uc1:test1 runat="server" id="test1" />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+            <uc1:Pages runat="server" id="Pages" />
         </div>
     </form>
 </body>

@@ -67,19 +67,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="Ascx\Pages.ascx" />
+    <Content Include="Master2Page.aspx" />
+    <Content Include="NoMaster.aspx" />
     <Content Include="Ascx\test1.ascx" />
     <Content Include="Ascx\test2.ascx" />
     <Content Include="Homepage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Ascx\Pages.ascx.cs">
+      <DependentUpon>Pages.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Ascx\Pages.ascx.designer.cs">
+      <DependentUpon>Pages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Master2Page.aspx.cs">
+      <DependentUpon>Master2Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master2Page.aspx.designer.cs">
+      <DependentUpon>Master2Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NoMaster.aspx.cs">
+      <DependentUpon>NoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoMaster.aspx.designer.cs">
+      <DependentUpon>NoMaster.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ascx\test1.ascx.cs">
       <DependentUpon>test1.ascx</DependentUpon>
